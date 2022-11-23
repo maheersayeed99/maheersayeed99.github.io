@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-watermelon: #FF3B3F;
+  --color-carbon: #A9A9A9;
+  --color-neutral: #EFEFEF;
+  --color-sky: #CAEBF2;
+  --color-black: #000;
+  --color-lgray: #d3d3d3;
+}
+
+body {
+  background-color: var(--color-neutral);
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  color: var(--color-black);
+  -webkit-animation: pulldown 0.5s ease-in-out;
+          animation: pulldown 0.5s ease-in-out;
+}
+
+header {
+  height: 14rem;
+}
+
+.controls {
+  color: var(--color-black);
+  position: fixed;
+  display: flex;
+  top: 3%;
+  left: 50%;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  transform: translateX(-50%);
+}
+
+.control {
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: var(--color-carbon);
+  opacity: 0.8;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem 1rem;
+}
+
+.active-btn {
+  background-color: var(--color-watermelon);
+  transition: all 0.1s ease-in-out;
+  -webkit-animation: bulge 1s linear;
+          animation: bulge 1s linear;
+}
+
+.title {
+  text-align: center;
+}
+.title h2 {
+  color: var(--color-black);
+  position: absolute;
+  left: 50%;
+  top: 8rem;
+  transform: translate(-50%, 0%);
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.title h2 span {
+  color: var(--color-watermelon);
+}
+.title h2 .shadow {
+  position: absolute;
+  top: -35%;
+  left: 50%;
+  color: var(--color-carbon);
+  z-index: -1;
+  transform: translate(-50%, 0);
+  font-weight: 800;
+  font-size: 5rem;
+  opacity: 0.33;
+}
+
+main .preview {
+  position: relative;
+  width: 75%; /* == (400px + 20px + 20px) * .5 = 220px */
+  height: 25%; /* == (160px + 30px + 30px) * .25 = 55px */
+  margin-left: 12.5%; /* == (400px + 20px + 20px) * .05 = 22px */
+  margin-top: 0%;
+  padding: 0px; /* == (400px + 20px + 20px) * .05 = 22px */
+}
+main .preview img {
+  width: 100%;
+}
+main p {
+  position: relative;
+  width: 75%; /* == (400px + 20px + 20px) * .5 = 220px */
+  height: 100%; /* == (160px + 30px + 30px) * .25 = 55px */
+  margin-left: 12.5%; /* == (400px + 20px + 20px) * .05 = 22px */
+  margin-top: 0%;
+  padding: 15px 6%; /* == (400px + 20px + 20px) * .05 = 22px */
+  background: var(--color-lgray);
+}
+main .pic img {
+  position: relative;
+  max-width: 50%; /* == (400px + 20px + 20px) * .5 = 220px */
+  height: auto;
+  width: auto;
+  margin-left: 25%; /* == (400px + 20px + 20px) * .05 = 22px */
+  margin-top: 0%;
+  padding: 15px 0px; /* == (400px + 20px + 20px) * .05 = 22px */
+}
+
+@-webkit-keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes pulldown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes pulldown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes pullup {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+@keyframes pullup {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+@-webkit-keyframes bulge {
+  0% {
+    opacity: 0.75;
+    transform: scale(0.8, 0.8);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.3, 1.3);
+  }
+  100% {
+    opacity: 0.75;
+    transform: scale(1, 1);
+  }
+}
+@keyframes bulge {
+  0% {
+    opacity: 0.75;
+    transform: scale(0.8, 0.8);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.3, 1.3);
+  }
+  100% {
+    opacity: 0.75;
+    transform: scale(1, 1);
+  }
+}/*# sourceMappingURL=project.css.map */

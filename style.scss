@@ -22,6 +22,17 @@
 
 body{
     background-color: var(--color-neutral);
+
+    .back{
+        position: relative;
+        top:0%;
+        left:0%;
+        right: 0%;
+        bottom: 25%;
+        background-color: var(--color-sky);
+    }
+
+
     font-family: 'Roboto';
     font-size: 1.5rem;
     color: var(--color-black);
@@ -119,7 +130,7 @@ section{
         top: 8rem;
         transform: translate(-50%,0%);
         text-transform: uppercase;
-        font-size: 6vw;
+        font-size: 4.5rem;
         font-weight: 700;
         span{
             color: var(--color-watermelon);
@@ -132,7 +143,8 @@ section{
             z-index: -1;
             transform: translate(-50%,0);
             font-weight: 800;
-            font-size: 8vw;
+            //font-size: 8vw;
+            font-size: 5rem;
             opacity: 0.33;
         }
     }
