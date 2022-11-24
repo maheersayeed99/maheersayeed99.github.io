@@ -74,13 +74,6 @@ section .body .main-image {
           animation: pulldown 0.25s linear;
 }
 
-/*
-.leaving{
-    display: block;
-    animation: pullup .25s linear;
-
-}
-*/
 .controls {
   color: var(--color-black);
   position: fixed;
@@ -192,6 +185,34 @@ section .body .main-image {
   margin-top: 0%;
 }
 
+@media screen and (max-width: 1000px) {
+  section {
+    padding: 3rem 2rem;
+  }
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .title h2 {
+    font-size: 3.3rem;
+  }
+  .title h2 .shadow {
+    font-size: 3.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  section {
+    padding: 3rem 1rem;
+  }
+  .posts {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .title h2 {
+    font-size: 2rem;
+  }
+  .title h2 .shadow {
+    font-size: 2.5rem;
+  }
+}
 @-webkit-keyframes flip {
   from {
     transform: rotateY(0deg);
@@ -200,7 +221,6 @@ section .body .main-image {
     transform: rotateY(360deg);
   }
 }
-
 @keyframes flip {
   from {
     transform: rotateY(0deg);

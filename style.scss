@@ -84,13 +84,6 @@ section{
     animation: pulldown .25s linear;
     
 }
-/*
-.leaving{
-    display: block;
-    animation: pullup .25s linear;
-
-}
-*/
 
 .controls{
     color: var(--color-black);
@@ -162,7 +155,6 @@ section{
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 3rem;
     grid-column-gap: 3rem;
-
     margin-top: 12rem;
 
     
@@ -226,6 +218,52 @@ section{
 
     }
 }
+
+@media screen and (max-width:1000px) {
+    section{
+        padding: 3rem 2rem;
+    }
+    .posts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .title{
+
+        h2{
+            font-size: 3.3rem;
+            .shadow{
+                font-size: 3.8rem;
+                
+            }
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+
+    section{
+        padding: 3rem 1rem;
+    }
+
+    .posts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .title{
+
+        h2{
+            font-size: 2.0rem;
+            .shadow{
+                font-size: 2.5rem;
+                
+            }
+        }
+    }
+}
+
 
 @keyframes flip{
     from{

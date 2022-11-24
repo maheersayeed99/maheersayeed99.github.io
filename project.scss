@@ -130,11 +130,11 @@ main{
     .pic{
         img{
             position:relative;
-            max-width: 50%;   /* == (400px + 20px + 20px) * .5 = 220px */
-            //height: 100%;  /* == (160px + 30px + 30px) * .25 = 55px */
+            //max-width: 50%;   /* == (400px + 20px + 20px) * .5 = 220px */
+            height: 100%;  /* == (160px + 30px + 30px) * .25 = 55px */
 
-            height: auto; 
-            width: auto; 
+            //height: auto; 
+            width: 50%; 
             //max-width: 60%; 
             //max-height: 120%;
 
