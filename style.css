@@ -191,6 +191,7 @@ section .body .main-image {
   }
   .posts {
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 10rem;
   }
   .title h2 {
     font-size: 3.3rem;
@@ -205,6 +206,7 @@ section .body .main-image {
   }
   .posts {
     grid-template-columns: repeat(1, 1fr);
+    margin-top: 8rem;
   }
   .title h2 {
     font-size: 2rem;
