@@ -3,6 +3,7 @@ const buttons = document.querySelectorAll('.controls')
 // Individual Button
 const button = document.querySelectorAll('.control')
 // Main Content
+const post = document.querySelectorAll('.picture')
 
 
 function transitionPage(){
@@ -15,15 +16,28 @@ function transitionPage(){
 
             const id = this.dataset.id;
             console.log(id);
-            window.location.href = "index.html";
+            if (id == "projects")
+            {
+                window.location.href = "index.html";
+            }
+            else if (id == "about")
+            {
+                window.location.href = "about.html";
+            }
+            if (id == "contact")
+            {
+                window.location.href = "contact.html";
+            }
             
-            /*
-            const active = document.querySelectorAll('.active-sec');
-            active[0].classList.remove("active-sec");
-            const element = document.getElementById(id);
-            element.classList.add("active-sec");
-            */
             
+        })
+    }
+
+    for (let i = 0; i<post.length; ++i)
+    {
+        post[i].addEventListener('click', function(){
+            const id = this.dataset.id;
+            window.location.href = id + ".html";    
         })
     }
 

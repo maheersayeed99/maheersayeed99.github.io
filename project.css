@@ -31,6 +31,40 @@ header {
   height: 14rem;
 }
 
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3rem 5rem;
+}
+section .body {
+  font-size: medium;
+}
+section .body .main-image {
+  background-size: contain;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.section {
+  transform: translateY(0) scale(0);
+  transition: all 0.4s ease-in-out;
+  display: none;
+  transform: translateY(0) scale(1);
+  background-color: var(--color-neutral);
+}
+
+.active-sec {
+  display: block;
+  -webkit-animation: pulldown 0.25s linear;
+          animation: pulldown 0.25s linear;
+}
+
 .controls {
   color: var(--color-black);
   position: fixed;
@@ -164,6 +198,63 @@ main .table .child img {
      object-fit: fill;
 }
 
+.posts {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3rem;
+  grid-column-gap: 3rem;
+  margin-top: 12rem;
+}
+.posts .post {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+.posts .post .text {
+  height: auto;
+  background-color: var(--color-carbon);
+  text-align: center;
+  margin-top: -7px;
+  padding: 0.5rem;
+  border-top: 8px solid var(--color-watermelon);
+  color: var(--color-neutral);
+  z-index: -1;
+}
+.posts .post h5 {
+  font-family: "Roboto", sans-serif;
+  height: auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 0%;
+  z-index: -1;
+  font-weight: normal;
+  color: var(--color-black);
+}
+.posts .post .picture :hover {
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transform: scale(1.1);
+  transition: all 0.4 ease-in-out;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 99;
+}
+.posts .post .picture :hover img {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
+}
+.posts .post .picture img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 0.4 ease-in-out;
+}
+
 @media screen and (max-width: 1000px) {
   header {
     height: 12.5rem;
@@ -173,6 +264,13 @@ main .table .child img {
   }
   .title h2 .shadow {
     font-size: 3.8rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10rem;
   }
   body {
     font-size: 1rem;
@@ -220,6 +318,13 @@ main .table .child img {
   }
   .title h2 .shadow {
     font-size: 2.5rem;
+  }
+  section {
+    padding: 3rem 1rem;
+  }
+  .posts {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 8rem;
   }
   body {
     font-size: 1rem;

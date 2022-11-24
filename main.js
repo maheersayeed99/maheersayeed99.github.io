@@ -14,22 +14,20 @@ function transitionPage(){
 
     for (let i = 0; i<button.length; ++i){
         button[i].addEventListener('click', function(){
-            let activeButton = document.querySelectorAll('.active-btn');
-            let activeSection = document.querySelectorAll('.active-sec');
-
-            if (activeButton.length != 0)
-            {
-                activeButton[0].classList.remove("active-btn");
-            }
-            
-            activeSection[0].classList.remove("active-sec");
-
-            this.classList.add("active-btn");
             const id = this.dataset.id;
-            const element = document.getElementById(id);
-            element.classList.add("active-sec")    
-            
-            console.log(id)
+            console.log(id);
+            if (id == "projects")
+            {
+                window.location.href = "index.html";
+            }
+            else if (id == "about")
+            {
+                window.location.href = "about.html";
+            }
+            if (id == "contact")
+            {
+                window.location.href = "contact.html";
+            }
         })
     }
     
