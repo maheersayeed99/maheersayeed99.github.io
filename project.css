@@ -180,22 +180,19 @@ main .pic img {
   padding: 15px 0px; /* == (400px + 20px + 20px) * .05 = 22px */
 }
 main .table {
-  display: grid;
   position: relative;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 3rem;
-  grid-column-gap: 0rem;
-  padding: 0px 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  width: 50%;
+  margin-left: 25%;
 }
 main .table .child {
   width: 100%;
-  align-content: center;
 }
 main .table .child img {
-  width: auto;
-  height: 500px;
-  -o-object-fit: fill;
-     object-fit: fill;
+  width: 100%;
 }
 
 .posts {
@@ -300,13 +297,8 @@ main .table .child img {
     margin-left: 15%; /* == (400px + 20px + 20px) * .05 = 22px */
   }
   main .table {
-    padding: 0px 20%;
-  }
-  main .table .child {
-    width: 100%;
-  }
-  main .table .child img {
-    height: 300px;
+    width: 80%;
+    margin-left: 10%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -355,13 +347,8 @@ main .table .child img {
     margin-left: 12.5%; /* == (400px + 20px + 20px) * .05 = 22px */
   }
   main .table {
-    padding: 0px 20%;
-  }
-  main .table .child {
-    width: 100%;
-  }
-  main .table .child img {
-    height: 200px;
+    width: 90%;
+    margin-left: 5%;
   }
 }
 @-webkit-keyframes flip {
