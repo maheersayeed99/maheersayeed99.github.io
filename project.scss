@@ -145,6 +145,19 @@ section{
 }
 
 main{
+    .banner{
+        position: relative;
+        width: 100%;   /* == (400px + 20px + 20px) * .5 = 220px */
+        height: 25%;  /* == (160px + 30px + 30px) * .25 = 55px */
+        margin-left: 0%;   /* == (400px + 20px + 20px) * .05 = 22px */
+        margin-top: 0%;
+        padding: 0px;  /* == (400px + 20px + 20px) * .05 = 22px */
+        //background: var(--color-sky);
+        img{
+            width: 100%;
+        }
+
+    }
     .preview{
         position: relative;
         width: 75%;   /* == (400px + 20px + 20px) * .5 = 220px */
