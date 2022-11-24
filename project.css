@@ -113,6 +113,30 @@ main p {
   padding: 15px 17.5%; /* == (400px + 20px + 20px) * .05 = 22px */
   background: var(--color-lgray);
 }
+main h4 {
+  position: relative;
+  width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
+  height: 100%; /* == (160px + 30px + 30px) * .25 = 55px */
+  margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
+  margin-top: 0%;
+  padding: 15px 17.5%; /* == (400px + 20px + 20px) * .05 = 22px */
+  background: var(--color-lgray);
+  font-weight: 600;
+}
+main iframe {
+  width: 50%; /* == (400px + 20px + 20px) * .5 = 220px */
+  margin-left: 25%; /* == (400px + 20px + 20px) * .05 = 22px */
+  height: 500px;
+}
+main ul {
+  position: relative;
+  width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
+  height: 100%; /* == (160px + 30px + 30px) * .25 = 55px */
+  margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
+  margin-top: 0%;
+  padding: 15px 17.5%; /* == (400px + 20px + 20px) * .05 = 22px */
+  background: var(--color-lgray);
+}
 main .pic img {
   position: relative;
   height: 100%; /* == (160px + 30px + 30px) * .25 = 55px */
@@ -120,6 +144,24 @@ main .pic img {
   margin-left: 30%; /* == (400px + 20px + 20px) * .05 = 22px */
   margin-top: 0%;
   padding: 15px 0px; /* == (400px + 20px + 20px) * .05 = 22px */
+}
+main .table {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3rem;
+  grid-column-gap: 0rem;
+  padding: 0px 20%;
+}
+main .table .child {
+  width: 100%;
+  align-content: center;
+}
+main .table .child img {
+  width: auto;
+  height: 500px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 @media screen and (max-width: 1000px) {
@@ -145,9 +187,28 @@ main .pic img {
     padding: 10px 15%; /* == (400px + 20px + 20px) * .05 = 22px */
     background: var(--color-lgray);
   }
+  main h4 {
+    width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
+    margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
+    padding: 10px 15%; /* == (400px + 20px + 20px) * .05 = 22px */
+    background: var(--color-lgray);
+  }
+  main iframe {
+    width: 70%; /* == (400px + 20px + 20px) * .5 = 220px */
+    margin-left: 15%; /* == (400px + 20px + 20px) * .05 = 22px */
+  }
   main .pic img {
     width: 70%;
     margin-left: 15%; /* == (400px + 20px + 20px) * .05 = 22px */
+  }
+  main .table {
+    padding: 0px 20%;
+  }
+  main .table .child {
+    width: 100%;
+  }
+  main .table .child img {
+    height: 300px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -173,9 +234,29 @@ main .pic img {
     padding: 10px 15px; /* == (400px + 20px + 20px) * .05 = 22px */
     background: var(--color-lgray);
   }
+  main h4 {
+    width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
+    margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
+    padding: 10px 15px; /* == (400px + 20px + 20px) * .05 = 22px */
+    background: var(--color-lgray);
+  }
+  main iframe {
+    width: 90%; /* == (400px + 20px + 20px) * .5 = 220px */
+    margin-left: 5%; /* == (400px + 20px + 20px) * .05 = 22px */
+    height: 300px;
+  }
   main .pic img {
     width: 75%;
     margin-left: 12.5%; /* == (400px + 20px + 20px) * .05 = 22px */
+  }
+  main .table {
+    padding: 0px 20%;
+  }
+  main .table .child {
+    width: 100%;
+  }
+  main .table .child img {
+    height: 200px;
   }
 }
 @-webkit-keyframes flip {
