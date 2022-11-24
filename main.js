@@ -36,19 +36,8 @@ function transitionPage(){
     for (let i = 0; i<post.length; ++i)
     {
         post[i].addEventListener('click', function(){
-            let activeButton = document.querySelectorAll('.active-btn');
-            let activeSection = document.querySelectorAll('.active-sec');
-
-            if (activeButton.length != 0)
-            {
-                activeButton[0].classList.remove("active-btn");
-            }
-
-            activeSection[0].classList.remove("active-sec");
-
             const id = this.dataset.id;
-            const element = document.getElementById(id);
-            element.classList.add("active-sec")    
+            window.location.href = id + ".html";    
         })
     }
     
