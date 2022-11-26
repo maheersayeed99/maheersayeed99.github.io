@@ -4,6 +4,8 @@ const buttons = document.querySelectorAll('.controls')
 const button = document.querySelectorAll('.control')
 // Main Content
 const post = document.querySelectorAll('.picture')
+// Icons
+const icons = document.querySelectorAll('.text')
 
 
 function transitionPage(){
@@ -41,6 +43,7 @@ function transitionPage(){
         })
     }
 
+    
 }
 
 
