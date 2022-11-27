@@ -14,6 +14,7 @@
 
     <body class = "wholeBody">
         
+        
         <header>
 
             <div class="title">
@@ -44,13 +45,13 @@
                 </div>
             </div>
             <p>This sample robot has 2 additional links. One team member developed a parser that takes this information, and stores it in the robot workspace class. Forward kinematics is then performed to find the end effector location given the angle constraints. The angles are chosen from the constraint range in distinct increments. The density of these increments can be changed with an input argument when running the file. Multithreading was also done to speed up the point cloud generation process. A maximum of 8 threads can be used, which is also specified with the second input argument. The following images show the difference between a density of 10 and a density of 100.</p>
-            <div class="table">
-                <div class="child">
-                    <img src="/img/rviz/3.png">
-                </div>
 
-                <div class="child">
-                    <img src="/img/rviz/4.png">
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                  <img src="img/rviz/3.png">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                  <img src="img/rviz/4.png">
                 </div>
             </div>
 
@@ -65,6 +66,7 @@
                     <img src="/img/rviz/6.webp">
                 </div>
             </div>
+
 
             <h4>Saving XML</h4>
             <p>We also wanted to save the point cloud data in a pcd file. So that the point cloud can be exported to e used elsewhere as necessary. I developed a function that takes the point cloud position data and formats it as a pcd file. Every time the project is run, the xml file is developed and saved in the build directory.</p>
@@ -83,7 +85,7 @@
             </div>
 
 
-
+            
 
         </main>
 
@@ -104,10 +106,15 @@
             </div>
     
         </div>
+
+
+        <script src="project.js"></script>
+        <script src="compare.js"></script>
+
         
         
 
-        <script src="project.js"></script>
+        
         
     </body>
 

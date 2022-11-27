@@ -7,6 +7,7 @@ const post = document.querySelectorAll('.picture')
 
 
 function transitionPage(){
+    console.log(2);
 
     for (let i = 0; i<button.length; ++i){
         

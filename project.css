@@ -277,6 +277,37 @@ main .table .child {
 main .table .child img {
   width: 100%;
 }
+main * {
+  box-sizing: border-box;
+}
+main .img-comp-container {
+  position: relative;
+  margin-left: 17.5%;
+  height: 600px; /*should be the same height as the images*/
+  align-items: center;
+  align-content: center;
+}
+main .img-comp-img {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+}
+main .img-comp-img img {
+  display: block;
+  height: 100%;
+}
+main .img-comp-slider {
+  position: absolute;
+  z-index: 1000;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 10px;
+  height: 50px;
+  background-color: var(--color-watermelon);
+  opacity: 0.8;
+  border-radius: 5px;
+}
 
 @media screen and (max-width: 1000px) {
   header {
@@ -326,6 +357,10 @@ main .table .child img {
     width: 80%;
     margin-left: 10%;
   }
+  main .img-comp-container {
+    height: 450px;
+    margin-left: 15%;
+  }
 }
 @media screen and (max-width: 600px) {
   header {
@@ -374,6 +409,10 @@ main .table .child img {
   }
   main .table {
     width: 90%;
+    margin-left: 5%;
+  }
+  main .img-comp-container {
+    height: 350px;
     margin-left: 5%;
   }
 }
