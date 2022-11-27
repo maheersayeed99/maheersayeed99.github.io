@@ -25,14 +25,12 @@ body {
   font-size: 1.2rem;
   color: var(--color-black);
 }
-
-main {
+body header {
+  height: 14rem;
   -webkit-animation: pulldown 0.5s linear;
           animation: pulldown 0.5s linear;
 }
-
-header {
-  height: 14rem;
+body main {
   -webkit-animation: pulldown 0.5s linear;
           animation: pulldown 0.5s linear;
 }
@@ -45,17 +43,6 @@ section {
   top: 0;
   padding: 3rem 5rem;
 }
-section .body {
-  font-size: medium;
-}
-section .body .main-image {
-  background-size: contain;
-  position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-}
 
 .section {
   transform: translateY(0) scale(0);
@@ -63,6 +50,8 @@ section .body .main-image {
   display: none;
   transform: translateY(0) scale(1);
   background-color: var(--color-neutral);
+  -webkit-animation: pulldown 0.5s linear;
+          animation: pulldown 0.5s linear;
 }
 
 .active-sec {
@@ -133,85 +122,6 @@ section .body .main-image {
   opacity: 0.33;
 }
 
-main .banner {
-  position: relative;
-  width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
-  height: 25%; /* == (160px + 30px + 30px) * .25 = 55px */
-  margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
-  margin-top: 0%;
-  padding: 0px; /* == (400px + 20px + 20px) * .05 = 22px */
-}
-main .banner img {
-  width: 100%;
-}
-main .preview {
-  position: relative;
-  width: 75%; /* == (400px + 20px + 20px) * .5 = 220px */
-  height: 25%; /* == (160px + 30px + 30px) * .25 = 55px */
-  margin-left: 12.5%; /* == (400px + 20px + 20px) * .05 = 22px */
-  margin-top: 0%;
-  padding: 0px; /* == (400px + 20px + 20px) * .05 = 22px */
-}
-main .preview img {
-  width: 100%;
-}
-main p {
-  position: relative;
-  width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
-  height: 100%; /* == (160px + 30px + 30px) * .25 = 55px */
-  margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
-  margin-top: 0%;
-  padding: 15px 17.5%; /* == (400px + 20px + 20px) * .05 = 22px */
-  background: var(--color-lgray);
-}
-main h4 {
-  position: relative;
-  width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
-  height: 100%; /* == (160px + 30px + 30px) * .25 = 55px */
-  margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
-  margin-top: 0%;
-  padding: 15px 17.5%; /* == (400px + 20px + 20px) * .05 = 22px */
-  background: var(--color-lgray);
-  font-weight: 600;
-}
-main iframe {
-  width: 50%; /* == (400px + 20px + 20px) * .5 = 220px */
-  margin-left: 25%; /* == (400px + 20px + 20px) * .05 = 22px */
-  height: 500px;
-}
-main ul {
-  position: relative;
-  width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
-  height: 100%; /* == (160px + 30px + 30px) * .25 = 55px */
-  margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
-  margin-top: 0%;
-  padding: 15px 17.5%; /* == (400px + 20px + 20px) * .05 = 22px */
-  background: var(--color-lgray);
-}
-main .pic img {
-  position: relative;
-  height: 100%; /* == (160px + 30px + 30px) * .25 = 55px */
-  width: 40%;
-  margin-left: 30%; /* == (400px + 20px + 20px) * .05 = 22px */
-  margin-top: 0%;
-  padding: 15px 0px; /* == (400px + 20px + 20px) * .05 = 22px */
-}
-main .table {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  width: 50%;
-  margin-left: 25%;
-}
-main .table .child {
-  width: 100%;
-}
-main .table .child img {
-  width: 100%;
-}
-
 .posts {
   display: grid;
   position: relative;
@@ -235,20 +145,14 @@ main .table .child img {
   padding: 0.5rem;
   border-top: 8px solid var(--color-watermelon);
   color: var(--color-neutral);
-  z-index: 0;
 }
-.posts .post h4 {
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-}
-.posts .post h4 .icon {
+.posts .post .text .icon {
   margin-left: 50%;
+  margin-top: 2px;
   position: relative;
   font-size: x-large;
   background-color: var(--color-github);
   opacity: 0.75;
-  color: white;
   width: 45px;
   height: 45px;
   display: flex;
@@ -258,7 +162,7 @@ main .table .child img {
   transform: translateX(-50%);
   z-index: 3;
 }
-.posts .post h4 :hover {
+.posts .post .text :hover {
   opacity: 1;
   font-size: xx-large;
 }
@@ -282,6 +186,8 @@ main .table .child img {
   transition: all 0.4 ease-in-out;
 }
 .posts .post .picture :hover {
+  position: relative;
+  z-index: 1000;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
   transform: translateY(-5px);
   transform: scale(1.1);
@@ -291,6 +197,85 @@ main .table .child img {
 }
 .posts .post .picture :hover img {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+main .banner {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 0px;
+}
+main .banner img {
+  width: 100%;
+}
+main .preview {
+  position: relative;
+  width: 75%;
+  height: 25%;
+  margin-left: 12.5%;
+  margin-top: 0%;
+  padding: 0px;
+}
+main .preview img {
+  width: 100%;
+}
+main p {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 15px 17.5%;
+  background: var(--color-lgray);
+}
+main h4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 15px 17.5%;
+  background: var(--color-lgray);
+  font-weight: 600;
+}
+main iframe {
+  width: 50%;
+  margin-left: 25%;
+  height: 500px;
+}
+main ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 15px 17.5%;
+  background: var(--color-lgray);
+}
+main .pic img {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 0%;
+  padding: 15px 0px;
+}
+main .table {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  width: 50%;
+  margin-left: 25%;
+}
+main .table .child {
+  width: 100%;
+}
+main .table .child img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -314,28 +299,28 @@ main .table .child img {
     font-size: 1rem;
   }
   main .preview {
-    width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
-    margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
+    width: 100%;
+    margin-left: 0%;
   }
   main p {
-    width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
-    margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
-    padding: 10px 15%; /* == (400px + 20px + 20px) * .05 = 22px */
+    width: 100%;
+    margin-left: 0%;
+    padding: 10px 15%;
     background: var(--color-lgray);
   }
   main h4 {
-    width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
-    margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
-    padding: 10px 15%; /* == (400px + 20px + 20px) * .05 = 22px */
+    width: 100%;
+    margin-left: 0%;
+    padding: 10px 15%;
     background: var(--color-lgray);
   }
   main iframe {
-    width: 70%; /* == (400px + 20px + 20px) * .5 = 220px */
-    margin-left: 15%; /* == (400px + 20px + 20px) * .05 = 22px */
+    width: 70%;
+    margin-left: 15%;
   }
   main .pic img {
     width: 70%;
-    margin-left: 15%; /* == (400px + 20px + 20px) * .05 = 22px */
+    margin-left: 15%;
   }
   main .table {
     width: 80%;
@@ -363,29 +348,29 @@ main .table .child img {
     font-size: 1rem;
   }
   main .preview {
-    width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
-    margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
+    width: 100%;
+    margin-left: 0%;
   }
   main p {
-    width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
-    margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
-    padding: 10px 15px; /* == (400px + 20px + 20px) * .05 = 22px */
+    width: 100%;
+    margin-left: 0%;
+    padding: 10px 15px;
     background: var(--color-lgray);
   }
   main h4 {
-    width: 100%; /* == (400px + 20px + 20px) * .5 = 220px */
-    margin-left: 0%; /* == (400px + 20px + 20px) * .05 = 22px */
-    padding: 10px 15px; /* == (400px + 20px + 20px) * .05 = 22px */
+    width: 100%;
+    margin-left: 0%;
+    padding: 10px 15px;
     background: var(--color-lgray);
   }
   main iframe {
-    width: 90%; /* == (400px + 20px + 20px) * .5 = 220px */
-    margin-left: 5%; /* == (400px + 20px + 20px) * .05 = 22px */
+    width: 90%;
+    margin-left: 5%;
     height: 300px;
   }
   main .pic img {
     width: 75%;
-    margin-left: 12.5%; /* == (400px + 20px + 20px) * .05 = 22px */
+    margin-left: 12.5%;
   }
   main .table {
     width: 90%;
@@ -422,22 +407,6 @@ main .table .child img {
   }
   100% {
     transform: translateY(0);
-  }
-}
-@-webkit-keyframes pullup {
-  0% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(0);
-  }
-}
-@keyframes pullup {
-  0% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(0);
   }
 }
 @-webkit-keyframes bulge {
