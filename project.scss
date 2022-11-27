@@ -111,6 +111,7 @@ section{
 
 .title{
     text-align: center;
+    
     h2{
         color: var(--color-black);
         position: absolute;
@@ -340,6 +341,7 @@ main{
         align-content: center;
         width: 50%;
         margin-left: 25%;
+        background-color: #000;
 
         .child{
             width: 100%;
@@ -353,43 +355,63 @@ main{
         
     }
 
-    * {box-sizing: border-box;}
+    
 
     .img-comp-container {
 
     position: relative;
-    margin-left: 17.5%;
+    margin-left: 15%;
+    width: 70%;
+    height:100%;
     
-    //width:100%;
-    height: 600px; /*should be the same height as the images*/
-    align-items: center;
-    align-content: center;
-    //transform: translateX(-50%);
-    }
-
     .img-comp-img {
-    position: absolute;
-    width: auto;
-    height: 100%;
-    overflow:hidden;
+        width: 100%;
+        overflow:hidden;
+        img {
+            display:block;
+            width: 100%;
+            }
+        }
+    
+    .img-comp-overlay{
+    
+        position: absolute;
+        transform: translateY(-100%);
+        height: 100%;
+        overflow:hidden;
+        img {
+            display:block;
+            height: 100%;
+            }
+    
+        }
     }
 
-    .img-comp-img img {
-    display:block;
-    height: 100%;
-    }
+    
+
+    
 
     .img-comp-slider {
-    position: absolute;
-    z-index:1000;
-    cursor: ew-resize;
-    /*set the appearance of the slider:*/
-    width: 10px;
-    height: 50px;
-    background-color: var(--color-watermelon);
-    opacity: 0.8;
-    border-radius: 5px;
+
+        position: absolute;
+        z-index:1000;
+        cursor: ew-resize;
+        /*set the appearance of the slider:*/
+        width: 20px;
+        height: 200px;
+        background-color: var(--color-watermelon);
+        opacity: 0.5;
+        border-radius: 10px;
+        //transform: translateY(150%);
+
+        
     }
+    
+    .img-comp-slider:hover{
+        opacity: 1.0;
+        transform: scale(1.3);
+    }
+    
 
     
 
@@ -470,8 +492,15 @@ main{
         }
 
         .img-comp-container {
-            height: 450px;
+            width: 70%;
             margin-left: 15%;
+        }
+
+        .img-comp-slider {
+            
+            width: 20px;
+            height: 100px;
+            border-radius: 10px;
         }
         
     }
@@ -551,8 +580,16 @@ main{
             
         }
         .img-comp-container {
-            height: 350px;
+            //height: 350px;
             margin-left: 5%;
+            width: 90%;
+        }
+
+        .img-comp-slider {
+            
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
         }
     }
 

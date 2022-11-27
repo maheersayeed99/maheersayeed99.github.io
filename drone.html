@@ -27,12 +27,12 @@
 
         <main>
             <div class="preview">
-                <img src="img/drone_preview.png" alt="">
+                <img src="img/drone/drone_preview.png" alt="">
             </div>
             
             <p>I worked in a team of five people in my Advanced Control Systems Integration class to reprogram the attitude and height controller of a Crazyflie Hobby drone to make it more robust and handle motor loss. The built in controller was a poorly implemented cascading PID controller. Our goal was to change it into an LQR controller so that a change of state, such as motor loss, can be handled quickly. My responsibilities in the group was hardware implementation, so I spent the majority of my time altering the firmware C code of the drone and tuning the controller parameters.</p>
             <p>The two goals of our team for this project was for the drone to be able to handle gust disturbances and motor-loss. Gust disturbance is something that the on-board PID controller could already handle, so we decided that it would be a good way to test the robustness of our new controller. The drone would need to fly stably through bursts of compressed air. It would need to reposition itself as well. The second test was motor loss. This is something that the onboard controller could not handle. Our plan was to set a voltage ceiling on one of the four motors at 50 percent after a certain amount of time had passed. The drone would need to then react accordingly and land safely without flipping over.</p>
-            <p>System modeling was done in Matlab and Simulink, the firmware was edited in C and logging commands were written in Python. The updated firmware can be found at https://github.com/maheersayeed99/crazyflie-firmware. </p>
+            <p>System modeling was done in Matlab and Simulink, the firmware was edited in C and logging commands were written in Python. The updated firmware can be found in the crazyflie github repository. </p>
             <p>First, a simulink model was developed that mimicked the behavior of the real drone. This model was then given a Q and R matrix to determine the K transformation matrix with the Matlab lqr() command.</p>
             <div class="pic"><img src="/img/drone/1.png"></div>
             <p>The system was modeled as the following</p>
