@@ -314,8 +314,9 @@ main .img-comp-slider {
   border-radius: 10px;
 }
 main .img-comp-slider:hover {
-  opacity: 1;
-  transform: scale(1.3);
+  -webkit-animation: popout 0.25s ease-in;
+          animation: popout 0.25s ease-in;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 1000px) {
@@ -493,5 +494,33 @@ main .img-comp-slider:hover {
   100% {
     opacity: 0.75;
     transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes popout {
+  0% {
+    opacity: 0.5;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1, 1.1);
+  }
+}
+@keyframes popout {
+  0% {
+    opacity: 0.5;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1, 1.1);
   }
 }/*# sourceMappingURL=project.css.map */
