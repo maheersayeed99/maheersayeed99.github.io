@@ -262,6 +262,26 @@ main .pic img {
   margin-top: 0%;
   padding: 15px 0px;
 }
+
+main .picSmall img {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 0%;
+  padding: 15px 0px;
+}
+
+main .sized img {
+  position: relative;
+  height: 100%;
+  width: auto;
+  margin-left: auto;
+  margin-top: 0%;
+  padding: 15px 0px;
+}
+
+
 main .table {
   position: relative;
   display: flex;
