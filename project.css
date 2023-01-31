@@ -383,6 +383,11 @@ main .img-comp-slider:hover {
     width: 70%;
     margin-left: 15%;
   }
+
+  main .picSmall img {
+    width: 40%;
+    margin-left: 30%;
+  }
   main .table {
     width: 80%;
     margin-left: 10%;
@@ -441,6 +446,10 @@ main .img-comp-slider:hover {
   main .pic img {
     width: 75%;
     margin-left: 12.5%;
+  }
+  main .picSmall img {
+    width: 60%;
+    margin-left: 20%;
   }
   main .table {
     width: 90%;
