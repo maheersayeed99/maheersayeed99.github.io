@@ -250,7 +250,7 @@ main iframe {
   position: relative;
   width: auto;
   height: 1500px;
-  padding-top: 200px;
+  padding-top: 225px;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -371,6 +371,23 @@ main .img-comp-slider:hover {
   /* -webkit-animation: popout 0.25s ease-in;
           animation: popout 0.25s ease-in; */
   opacity: 0.9;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip:hover {
+  content: attr(title);
+  position: absolute;
+  background: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1000px) {

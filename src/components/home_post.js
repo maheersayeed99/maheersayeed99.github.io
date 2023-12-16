@@ -14,7 +14,7 @@ const Home_Post = (props) => {
 
         <div class="post">                
             <div class="picture" data-id={props.data_id}><img src={props.image_src}
-            onClick={()=>{navigateToPage(props.data_id)}}/></div>
+            onClick={()=>{navigateToPage(`/${props.data_id}`)}}/></div>
             <h4 class="text">
                 {props.title}
                 

@@ -23,15 +23,13 @@ const Menu = () => {
 
             <div class="control control-2 active-btn" data-id="projects"
             onClick={()=>{navigateToPage("/","projects")}}>    
-                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <i class="fa-solid fa-diagram-project"></i>
             </div>
 
             <div class="control control-3" data-id="about"
             onClick={()=>{navigateToPage("/about","about")}}>
-                <i class="fa-solid fa-user-tie"></i>
+                <i class="fa-solid fa-file-lines"></i>
             </div>
-
-
         </div>
     )
 }
