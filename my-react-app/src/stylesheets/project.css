@@ -245,6 +245,25 @@ main iframe {
   margin-left: 25%;
   height: 500px;
 }
+
+.pdf {
+  position: relative;
+  width: auto;
+  height: 1500px;
+  padding-top: 200px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+.pdf_frame {
+  position: relative;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100%;
+  height: 100%;
+}
+
 main ul {
   position: relative;
   width: 100%;
@@ -463,6 +482,9 @@ main .img-comp-slider:hover {
     width: 40px;
     height: 40px;
     border-radius: 20px;
+  }
+  .pdf {
+    height: 1000px;
   }
 }
 @-webkit-keyframes flip {
