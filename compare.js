@@ -8,23 +8,28 @@ function initComparisons() {
         pass the "overlay" element as a parameter when executing the compareImages function: */
         compareImages(x[i]);
     }
-    function compareImages(img) {
+    async function compareImages(img) {
 
         var slider, img, clicked = 0, w, h;
         /* Get the width and height of the img element */
-        w = img.offsetWidth;
-        h = img.offsetHeight;
+        w = await img.offsetWidth;
+        h = await img.offsetHeight;
         /* Set the width of the img element to 50%: */
         img.style.width = (w / 2) + "px";
-        console.log(img.style.width);
         /* Create slider: */
+        
+
         slider = document.createElement("DIV");
         slider.setAttribute("class", "img-comp-slider");
         /* Insert slider */
         img.parentElement.insertBefore(slider, img);
         /* Position the slider in the middle: */
+
+        // console.log("AHHAHA",slider.style.left, w, slider.offsetWidth)
         slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
         slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+
+        
         /* Execute a function when the mouse button is pressed: */
         slider.addEventListener("mousedown", slideReady);
         /* And another function when the mouse button is released: */
@@ -78,4 +83,4 @@ function initComparisons() {
     }
   }
 
-  initComparisons();
+  setTimeout(initComparisons(), 100);

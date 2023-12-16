@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding: 2rem;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-watermelon: #FF3B3F;
+  --color-carbon: #A9A9A9;
+  --color-neutral: #EFEFEF;
+  --color-sky: #CAEBF2;
+  --color-black: #000;
+  --color-lgray: #d3d3d3;
+  --color-github: #CBC3E3;
+}
+
+body {
+  background-color: var(--color-neutral);
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  color: var(--color-black);
+}
+body header {
+  height: 14rem;
+  -webkit-animation: pulldown 0.5s linear;
+          animation: pulldown 0.5s linear;
+}
+body main {
+  -webkit-animation: pulldown 0.5s linear;
+          animation: pulldown 0.5s linear;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 3rem 5rem;
+}
+
+.section {
+  transform: translateY(0) scale(0);
+  transition: all 0.4s ease-in-out;
+  display: none;
+  transform: translateY(0) scale(1);
+  background-color: var(--color-neutral);
+  -webkit-animation: pulldown 0.5s linear;
+          animation: pulldown 0.5s linear;
+}
+
+.active-sec {
+  display: block;
+  -webkit-animation: pulldown 0.5s linear;
+          animation: pulldown 0.5s linear;
+}
+
+.controls {
+  color: var(--color-black);
+  position: fixed;
+  display: flex;
+  top: 3%;
+  left: 50%;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  transform: translateX(-50%);
+}
+
+.control {
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: var(--color-carbon);
+  opacity: 0.8;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem 1rem;
+}
+
+.active-btn {
+  background-color: var(--color-watermelon);
+  transition: all 0.1s ease-in-out;
+  -webkit-animation: bulge 1s linear;
+          animation: bulge 1s linear;
+}
+
+.title {
+  text-align: center;
+}
+.title h2 {
+  color: var(--color-black);
+  position: absolute;
+  left: 50%;
+  top: 8rem;
+  transform: translate(-50%, 0%);
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.title h2 span {
+  color: var(--color-watermelon);
+}
+.title h2 .shadow {
+  position: absolute;
+  top: -35%;
+  left: 50%;
+  color: var(--color-carbon);
+  z-index: -1;
+  transform: translate(-50%, 0);
+  font-weight: 800;
+  font-size: 5rem;
+  opacity: 0.33;
+}
+
+.posts {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 3rem;
+  grid-column-gap: 3rem;
+  margin-top: 12rem;
+}
+.posts .post {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+.posts .post .text {
+  height: auto;
+  background-color: var(--color-carbon);
+  text-align: center;
+  margin-top: -7px;
+  padding: 0.5rem;
+  border-top: 8px solid var(--color-watermelon);
+  color: var(--color-neutral);
+}
+.posts .post .text .icon {
+  margin-left: 50%;
+  margin-top: 2px;
+  position: relative;
+  font-size: x-large;
+  background-color: var(--color-github);
+  opacity: 0.75;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+.posts .post .text :hover {
+  opacity: 1;
+  font-size: xx-large;
+}
+.posts .post h5 {
+  font-family: "Roboto", sans-serif;
+  height: auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 0%;
+  z-index: -1;
+  font-weight: normal;
+  color: var(--color-black);
+}
+.posts .post .picture img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 0.4 ease-in-out;
+}
+.posts .post .picture :hover {
+  position: relative;
+  z-index: 1000;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+  transform: scale(1.1);
+  transition: all 0.4 ease-in-out;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.posts .post .picture :hover img {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+main .banner {
+  position: relative;
+  width: 100%;
+  height: 25%;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 0px;
+}
+main .banner img {
+  width: 100%;
+}
+main .preview {
+  position: relative;
+  width: 75%;
+  height: 25%;
+  margin-left: 12.5%;
+  margin-top: 0%;
+  padding: 0px;
+}
+main .preview img {
+  width: 100%;
+}
+main p {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 15px 17.5%;
+  background: var(--color-lgray);
+}
+main h4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 15px 17.5%;
+  background: var(--color-lgray);
+  font-weight: 600;
+}
+main iframe {
+  width: 50%;
+  margin-left: 25%;
+  height: 500px;
+}
+main ul {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 0%;
+  margin-top: 0%;
+  padding: 15px 17.5%;
+  background: var(--color-lgray);
+}
+main .pic img {
+  position: relative;
+  height: 100%;
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 0%;
+  padding: 15px 0px;
+}
+
+main .picSmall img {
+  position: relative;
+  height: 100%;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 0%;
+  padding: 15px 0px;
+}
+
+main .sized img {
+  position: relative;
+  height: 100%;
+  width: auto;
+  margin-left: auto;
+  margin-top: 0%;
+  padding: 15px 0px;
+}
+
+
+main .table {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  width: 50%;
+  margin-left: 25%;
+  background-color: #000;
+}
+main .table .child {
+  width: 100%;
+}
+main .table .child img {
+  width: 100%;
+}
+main .img-comp-container {
+  position: relative;
+  margin-left: 15%;
+  width: 70%;
+  height: 100%;
+}
+main .img-comp-container .img-comp-img {
+  width: 100%;
+  overflow: hidden;
+}
+main .img-comp-container .img-comp-img img {
+  display: block;
+  width: 100%;
+}
+main .img-comp-container .img-comp-overlay {
+  position: absolute;
+  transform: translateY(-100%);
+  height: 100%;
+  overflow: hidden;
+}
+main .img-comp-container .img-comp-overlay img {
+  display: block;
+  height: 100%;
+}
+main .img-comp-slider {
+  position: absolute;
+  z-index: 1000;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 20px;
+  height: 200px;
+  background-color: var(--color-watermelon);
+  opacity: 0.5;
+  border-radius: 10px;
+}
+main .img-comp-slider:hover {
+  -webkit-animation: popout 0.25s ease-in;
+          animation: popout 0.25s ease-in;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    height: 12.5rem;
+  }
+  .title h2 {
+    font-size: 3.3rem;
+  }
+  .title h2 .shadow {
+    font-size: 3.8rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  main .preview {
+    width: 100%;
+    margin-left: 0%;
+  }
+  main p {
+    width: 100%;
+    margin-left: 0%;
+    padding: 10px 15%;
+    background: var(--color-lgray);
+  }
+  main h4 {
+    width: 100%;
+    margin-left: 0%;
+    padding: 10px 15%;
+    background: var(--color-lgray);
+  }
+  main iframe {
+    width: 70%;
+    margin-left: 15%;
+  }
+  main .pic img {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  main .picSmall img {
+    width: 40%;
+    margin-left: 30%;
+  }
+  main .table {
+    width: 80%;
+    margin-left: 10%;
+  }
+  main .img-comp-container {
+    width: 70%;
+    margin-left: 15%;
+  }
+  main .img-comp-slider {
+    width: 20px;
+    height: 100px;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    height: 11rem;
+  }
+  .title h2 {
+    font-size: 2rem;
+  }
+  .title h2 .shadow {
+    font-size: 2.5rem;
+  }
+  section {
+    padding: 3rem 1rem;
+  }
+  .posts {
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 8rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  main .preview {
+    width: 100%;
+    margin-left: 0%;
+  }
+  main p {
+    width: 100%;
+    margin-left: 0%;
+    padding: 10px 15px;
+    background: var(--color-lgray);
+  }
+  main h4 {
+    width: 100%;
+    margin-left: 0%;
+    padding: 10px 15px;
+    background: var(--color-lgray);
+  }
+  main iframe {
+    width: 90%;
+    margin-left: 5%;
+    height: 300px;
+  }
+  main .pic img {
+    width: 75%;
+    margin-left: 12.5%;
+  }
+  main .picSmall img {
+    width: 60%;
+    margin-left: 20%;
+  }
+  main .table {
+    width: 90%;
+    margin-left: 5%;
+  }
+  main .img-comp-container {
+    margin-left: 5%;
+    width: 90%;
+  }
+  main .img-comp-slider {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+}
+@-webkit-keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes flip {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes pulldown {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes pulldown {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes bulge {
+  0% {
+    opacity: 0.75;
+    transform: scale(0.8, 0.8);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.3, 1.3);
+  }
+  100% {
+    opacity: 0.75;
+    transform: scale(1, 1);
+  }
+}
+@keyframes bulge {
+  0% {
+    opacity: 0.75;
+    transform: scale(0.8, 0.8);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.3, 1.3);
+  }
+  100% {
+    opacity: 0.75;
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes popout {
+  0% {
+    opacity: 0.5;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1, 1.1);
+  }
+}
+@keyframes popout {
+  0% {
+    opacity: 0.5;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    opacity: 0.9;
+    transform: scale(1, 1.1);
+  }
+}/*# sourceMappingURL=project.css.map */
