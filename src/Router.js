@@ -33,7 +33,7 @@ function Page_Router() {
         <Route path="/cube" element={<Cube_Page/>} />
         <Route path="/cuberobot" element={<Cube_Robot_Page/>} />
         <Route path="/habbit" element={<Habbit_Page/>} />
-        <Route path="/about" element={<About_Page/>} />
+        <Route path="/resume" element={<About_Page/>} />
         <Route path="/drone" element={<Drone_Page/>} />
         <Route path="/balance" element={<Balance_Page/>} />
         <Route path="/rviz" element={<Rviz_Page/>} />

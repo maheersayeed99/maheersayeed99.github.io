@@ -1,11 +1,7 @@
 import './stylesheets/project.css';
 import "./pages/home_page"
-import Home_Page from './pages/home_page';
-import Cube_Page from './pages/cube';
-import Cube_Robot_Page from './pages/cuberobot';
 import { Menu } from './components/menu';
-import { useState } from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router} from 'react-router-dom';
 import Page_Router from './Router';
 
 function App() {

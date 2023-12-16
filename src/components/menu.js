@@ -27,7 +27,7 @@ const Menu = () => {
             </div>
 
             <div class="control control-3" data-id="about"
-            onClick={()=>{navigateToPage("/about","about")}}>
+            onClick={()=>{navigateToPage("/resume","about")}}>
                 <i class="fa-solid fa-file-lines"></i>
             </div>
         </div>
