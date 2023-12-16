@@ -7,6 +7,10 @@ import Habbit_Page from './pages/habbit';
 import About_Page from './pages/about';
 import Drone_Page from './pages/drone';
 import Balance_Page from './pages/balance';
+import Rviz_Page from './pages/rviz';
+import Blackjack_Page from './pages/blackjack';
+import Gym_Page from './pages/gym';
+import Mousetrap_Page from './pages/mousetrap';
 
 
 
@@ -28,6 +32,10 @@ function Page_Router() {
         <Route path="/about" element={<About_Page/>} />
         <Route path="/drone" element={<Drone_Page/>} />
         <Route path="/balance" element={<Balance_Page/>} />
+        <Route path="/rviz" element={<Rviz_Page/>} />
+        <Route path="/blackjack" element={<Blackjack_Page/>} />
+        <Route path="/gym" element={<Gym_Page/>} />
+        <Route path="/mousetrap" element={<Mousetrap_Page/>} />
     </Routes>
 
     

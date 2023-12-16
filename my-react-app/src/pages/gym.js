@@ -1,0 +1,56 @@
+import '../stylesheets/project.css';
+import { Horizontal_Image_Array } from '../components/horizontal_image_array';
+
+
+function Gym_Page() {
+
+  return (
+    <body class = "wholeBody">
+        
+        <header>
+
+            <div class="title">
+                <h2>Haptic<span>Gym</span><span class="shadow">hapticgym</span></h2>
+            </div>
+
+        </header>
+
+
+
+
+        <main>
+            <div class="preview">
+                <img src="img/gym/capstone_preview.webp" alt=""/>
+            </div>
+            
+            <p>For my engineering capstone project. I was in a group of five people that built an electronic workout platform. This is a product that uses two brushless motors paired with a motor controller to provide resistance for a multitude of exercises. A user can stand on the platform and pull against the two cable driven handles. Their own body acts as a counter weight and keeps the system anchored to the ground while it is in use. Furthermore, the interface at the front can be used to digitally change the resistance at each cable. This means that the user can quickly adjust the resistance without stepping off the platform, which essentially turns the machine a very compact all-in-one home gym.</p>
+            <div class="pic"><img src="/img/gym/1.webp"/></div>
+            <p>We performed research to determine the top priorities for a product like this. Our research concluded that in order for the product to be successful, we needed the user to be able to perform a variety of exercises that hit every major muscle group. We accomplished this by having different exercise movements in mind when we were designing the product. Below are examples of a few exercises that can be performed on the haptic gym.</p>
+            
+            <Horizontal_Image_Array images={["/img/gym/2.webp","/img/gym/3.webp","/img/gym/4.webp"]}/>
+
+            <p>My main contribution on the project was on the electrical and software side. The machine has a motor controller (ODrive) that can provide constant torque resistance to each cable. An Arduino is used to communicate with the motor controller. I programmed the Arduino to change the resistance at each cable in real time using two potentiometers. This way, a user can change the resistance at each cable anywhere between 5 and 35 pounds within seconds.</p>
+            <div class="pic"><img src="/img/gym/5.jpeg"/></div>
+            <p>I have provided a schematic of all the wiring I did on this machine</p>
+            <div class="pic"><img src="/img/gym/6.png"/></div>
+            <p>A second thing I worked on was the battery box. This box contains a 5000mAh, 22 V LiPo Battery, along with a car relay and a small power switch. Powering the system with a battery makes the product extremely portable. I designed the box on SolidWorks and fabricated it with 3D printed and laser cut parts.</p>
+            <div class="pic"><img src="/img/gym/7.jpeg"/></div>
+            <p>After that, I wired the relay with the battery and switch with the following schematic.</p>
+            <div class="pic"><img src="/img/gym/8.png"/></div>
+            <p>The relay ensures that the current running through the power switch is significantly less that the current going through the ODrive. Because of this battery box, our system can be easily shut down and rebooted.</p>
+            <p>The last thing I worked on was the passive tensioning of the cables. Since the machine contains spools, it is important to keep the cables taut at all times, especially when they are being retracted. If there is slack, the cable will bunch up at the spools and cause the machine to malfunction. To solve this, I designed the double pulley system with my partner. The double pulley makes it so that the cable needs to go over one pulley and under the other. This creates a significant amount of static friction where the cable touches the pulleys. Since the cables cannot slide without rolling the pulley, they are kept taut while retracting. Furthermore, since the friction is static, there is very little wear at the cable over time.</p>
+            <div class="pic"><img src="/img/gym/9.jpeg"/></div>
+            <p>This is a significant upgrade over our first prototype, which contained a teflon slider that would passively tension the cable. Over time, the teflon would wear out the cable and cause it to snap.</p>
+            <div class="pic"><img src="/img/gym/10.webp"/></div>
+            <p>Our goal was to create a portable electronic gym that can simulate a mechanical gym. Not only does the Haptic Gym do that, but it has potential to be a much more intelligent piece of equipment. With stronger motors and a carbon fiber base, the maximum weight at each arm can be significantly increased from 35 pounds. Furthermore, the software can be changed to include modes that can alter the weight as a function of distance in order to optimize the users’ gym experience. Overall, the project was a major success.</p>
+
+
+        </main>
+
+        
+    </body>
+    
+  );
+}
+
+export default Gym_Page;
