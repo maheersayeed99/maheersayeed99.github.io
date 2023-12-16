@@ -5,6 +5,8 @@ import Cube_Page from './pages/cube';
 import Cube_Robot_Page from './pages/cuberobot';
 import Habbit_Page from './pages/habbit';
 import About_Page from './pages/about';
+import Drone_Page from './pages/drone';
+import Balance_Page from './pages/balance';
 
 
 
@@ -24,6 +26,8 @@ function Page_Router() {
         <Route path="/cuberobot" element={<Cube_Robot_Page/>} />
         <Route path="/habbit" element={<Habbit_Page/>} />
         <Route path="/about" element={<About_Page/>} />
+        <Route path="/drone" element={<Drone_Page/>} />
+        <Route path="/balance" element={<Balance_Page/>} />
     </Routes>
 
     

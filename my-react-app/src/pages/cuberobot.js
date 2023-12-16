@@ -1,6 +1,6 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Sliding_Image } from '../components/sliding_image';
 
 function Cube_Robot_Page() {
 
@@ -38,6 +38,9 @@ function Cube_Robot_Page() {
                 <img src="img/cuberobot/5.png"/>
                 </div>
             </div>
+
+
+            <Sliding_Image/>
             
             <p>The first step was to design a component that can turn the cube in the yaw direction. I call this part the tray. It is a 3d printed part controlled with a stepper motor. There is a slight dip in the tray that is sized to fit the cube perfectly. This locks the cube in place when the tray turns.</p>
             
