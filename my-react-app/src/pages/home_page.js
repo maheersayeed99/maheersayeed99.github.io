@@ -119,22 +119,6 @@ function Home_Page() {
                         
 
                         <Home_Post
-                        data_id = "chassis" 
-                        image_src = "img/chassis/chassis_preview.webp"
-                        title = "Tartan AUV Chassis"
-                        text = "I am currently using SolidWorks to design an Autonomous Underwater Submarine for my schools's robosub team. "
-                        />
-
-
-                        <Home_Post
-                        data_id = "gripper" 
-                        image_src = "img/gripper/gripper_preview.jpeg"
-                        title = "Mechanical Gripper Project"
-                        text = "The Objective of the project was to work in a group of four to build a gripper that could use a motor to grip an artifact. "
-                        />
-
-
-                        <Home_Post
                         data_id = "linkage" 
                         image_src = "img/linkage/linkage_preview.png"
                         title = "4-bar Linkage Project"

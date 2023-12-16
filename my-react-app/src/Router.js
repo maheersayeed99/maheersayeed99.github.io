@@ -11,9 +11,11 @@ import Rviz_Page from './pages/rviz';
 import Blackjack_Page from './pages/blackjack';
 import Gym_Page from './pages/gym';
 import Mousetrap_Page from './pages/mousetrap';
-
-
-
+import Shoerack_Page from './pages/shoerack';
+import Productlogic_Page from './pages/productlogic';
+import Bracket_Page from './pages/bracket';
+import Linkage_Page from './pages/linkage';
+import Crane_Page from './pages/crane';
 
 
 
@@ -36,6 +38,11 @@ function Page_Router() {
         <Route path="/blackjack" element={<Blackjack_Page/>} />
         <Route path="/gym" element={<Gym_Page/>} />
         <Route path="/mousetrap" element={<Mousetrap_Page/>} />
+        <Route path="/shoerack" element={<Shoerack_Page/>} />
+        <Route path="/productlogic" element={<Productlogic_Page/>} />
+        <Route path="/crane" element={<Crane_Page/>} />
+        <Route path="/bracket" element={<Bracket_Page/>} />
+        <Route path="/linkage" element={<Linkage_Page/>} />
     </Routes>
 
     
