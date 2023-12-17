@@ -28,7 +28,8 @@ const Sliding_Image = (props) => {
 
     const dragSliderTouch = (event) => {
         
-        const touchX = event.touchX
+        event.preventDefault();
+        const touchX = event.touches[0].clientX
 
         const element = document.getElementById(props.image_element_id)
         const rect = element.getBoundingClientRect();
@@ -53,7 +54,7 @@ const Sliding_Image = (props) => {
 
     const handleTouchDown = (e) => {
         document.addEventListener('touchmove', dragSliderTouch);
-        document.addEventListener('touchstart', handleTouchUp);
+        document.addEventListener('touchend', handleTouchUp);
     };
 
     const handleMouseUp = (e) => {
@@ -63,7 +64,7 @@ const Sliding_Image = (props) => {
 
     const handleTouchUp = (e) => {
         document.removeEventListener('touchmove', dragSliderTouch);
-        document.removeEventListener('touchstart', handleTouchUp);
+        document.removeEventListener('touchend', handleTouchUp);
     };
 
     
@@ -71,7 +72,7 @@ const Sliding_Image = (props) => {
 
         <div class="img-comp-container">
             
-            <div class="img-comp-slider" style={{marginLeft:`${sliderShow}%`}} onTouchStart={(event)=>{handleTouchDown(event)}} onMouseDown={(event)=>{handleMouseDown(event)}}></div>
+            <div class="img-comp-slider" style={{marginLeft:`${sliderShow}%`}} onTouch onTouchStart={(event)=>{handleTouchDown(event)}} onMouseDown={(event)=>{handleMouseDown(event)}}></div>
 
             <div class="img-comp-img" id={props.image_element_id}>
                 <img src={props.image_left}/>
