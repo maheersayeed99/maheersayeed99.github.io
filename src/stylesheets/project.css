@@ -514,8 +514,7 @@ main .img-comp-slider:hover {
   main .img-comp-slider {
     width: 40px;
     height: 40px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
   }
   .pdf {
     height: 1000px;
