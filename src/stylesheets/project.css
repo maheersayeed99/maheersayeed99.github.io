@@ -454,8 +454,18 @@ main .img-comp-slider:hover {
   }
   .posts {
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 10rem;
+    /* margin-top: 10rem; */
+    width: 95%;
+    margin-left: 2.5%;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
   }
+
+  .pdf-container {
+    width: 100%;
+    margin-left: 0%;
+  }
+
   body {
     font-size: 1rem;
   }
@@ -482,6 +492,11 @@ main .img-comp-slider:hover {
   main .pic img {
     width: 70%;
     margin-left: 15%;
+  }
+
+  main .widepic img {
+    width: 80%;
+    margin-left: 10%;
   }
 
   main .picSmall img {
@@ -518,7 +533,16 @@ main .img-comp-slider:hover {
   }
   .posts {
     grid-template-columns: repeat(1, 1fr);
-    margin-top: 8rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+    /* margin-top: 8rem; */
+  }
+
+  .pdf-container {
+    width: 100%;
+    margin-left: 0%;
   }
   body {
     font-size: 1rem;
