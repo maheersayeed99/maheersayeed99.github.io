@@ -2,6 +2,7 @@ import React from 'react';
 import '../stylesheets/project.css';
 import '../components/home_post'
 import Home_Post from '../components/home_post';
+import { Title } from '../components/title';
 
 function Home_Page() {
 
@@ -18,9 +19,8 @@ function Home_Page() {
 
             <main>
                 <section class="section sec2 projects active-sec" id="projects">
-                    <div class="title">
-                        <h2>Engineering<span>Portfolio</span><span class="shadow">EngineeringPortfolio</span></h2>
-                    </div>
+                    
+                    <Title/>
 
                     <div class="posts">
                         
@@ -35,7 +35,7 @@ function Home_Page() {
 
                         <Home_Post
                         data_id = "cuberobot" 
-                        image_src = "img/cuberobot/cuberobotmain.png"
+                        image_src = "img/cuberobot/preview.jpg"
                         title = "Rubik's Cube Robot"
                         text = "I built a robot to pair with my Rubik's Cube solving algorithm. This design is able to turn all 6 sides of the cube using only 2 motors."
                         link = "https://github.com/maheersayeed99/RubiksSolver"
@@ -61,7 +61,7 @@ function Home_Page() {
 
                         <Home_Post
                         data_id = "balance" 
-                        image_src = "img/balancer/balancer_preview.jpeg"
+                        image_src = "img/balancer/preview.jpg"
                         title = "Ball Balancing Robot"
                         text = "I designed and built a two degree-of-freedom ball balancing robot for my feedback controls class."
                         link = "https://github.com/maheersayeed99/BallBalancingRobot"
