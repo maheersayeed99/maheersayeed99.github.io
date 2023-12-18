@@ -69,9 +69,9 @@ function Cube_Robot_Page() {
             <h4>Control Software:</h4>
             
             <p>The microcontroller firmware is written using Arduino IDE. The stepper motor code is taken straight from a library. The DC motor needs to be controlled as though it were a servo motor. This is done using PID control with the encoder error. The PID constants are tuned to produce stable step responses with no overshoot. The step input and response are plotted below.</p>
-            <div class="pic"><img src="/img/cuberobot/12.png"/></div>
+            <div class="widepic"><img src="/img/cuberobot/12.png"/></div>
             <p>An important change needs to be made in the solver code to make the solution readable by the robot. The solver returns a series of moves that would solve the cube if the frame of reference is never changed. This is because the solver treats the white face as the top face at all times. However, the robot changes references every time it makes a move. The solver algorithm is processed with a function that keeps track of the frame of reference after every move.</p>
-            <div class="pic"><img src="/img/cuberobot/13.png"/></div>
+            <div class="widepic"><img src="/img/cuberobot/13.png"/></div>
             <p>Finally, the robot needs to get the solution from the solver. There are two ways to do this. The ESP8266 has a wifi module that can connect to the internet. The user can send the solution over wifi to the robot. However, it is just as easy to copy/paste the solution string to the serial monitor.</p>
 
 

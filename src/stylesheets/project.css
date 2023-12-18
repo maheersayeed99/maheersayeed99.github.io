@@ -212,9 +212,9 @@ main .banner img {
 }
 main .preview {
   position: relative;
-  width: 75%;
+  width: 50%;
   height: 25%;
-  margin-left: 12.5%;
+  margin-left: 25%;
   margin-top: 0%;
   padding: 0px;
 }
@@ -273,11 +273,24 @@ main ul {
   padding: 15px 17.5%;
   background: var(--color-lgray);
 }
+
+main .pic {
+  width: 100%;
+}
 main .pic img {
   position: relative;
   height: 100%;
-  width: 40%;
-  margin-left: 30%;
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 0%;
+  padding: 15px 0px;
+}
+
+main .widepic img {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  margin-left: 25%;
   margin-top: 0%;
   padding: 15px 0px;
 }
@@ -307,8 +320,8 @@ main .table {
   flex-direction: row;
   align-items: center;
   align-content: center;
-  width: 50%;
-  margin-left: 25%;
+  width: 40%;
+  margin-left: 30%;
   background-color: #000;
 }
 main .table .child {
@@ -319,8 +332,8 @@ main .table .child img {
 }
 main .img-comp-container {
   position: relative;
-  margin-left: 15%;
-  width: 70%;
+  margin-left: 30%;
+  width: 40%;
   height: 100%;
 }
 main .img-comp-container .img-comp-img {

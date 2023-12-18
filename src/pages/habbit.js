@@ -47,10 +47,7 @@ function Habbit_Page() {
         <p>Every morning at 5:30 AM, the app resets. At this point, all completed activities have their streak incremented by 1. All red activities will have their streak reset to 0. I added this feature to motivate myself to keep using the tracker.</p>
 
         <h4>Frontend:</h4>
-
-        <div class="preview">
-            <img src="img/habbit/habbitphone.jpg" style={{width:'30%;', marginLeft: '35%;'}} alt=""/>
-        </div>
+        <div class="pic"><img src="img/habbit/habbitphone.jpg"/></div>
 
         <p>The front-end for the Habbit website is a single table on the home page. This page can then be displayed on the phone as a widget using a 3rd party app. The user cannot interact with the app directly from the website. Instead, the intent of Habbit is to use Siri to interact with all aspects of this table. The table shows the user the current status of all their activities, as well as the current and maximum streak of days that the user has performed the activities at the required frequency.</p>
 
