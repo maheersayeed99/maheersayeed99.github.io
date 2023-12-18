@@ -1,19 +1,13 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Title } from '../components/title';
 
 function Mousetrap_Page() {
 
   return (
     <body class = "wholeBody">
         
-        <header>
-
-            <div class="title">
-                <h2>Mousetrap<span>Car</span><span class="shadow">MousetrapCar</span></h2>
-            </div>
-
-        </header>
+        <Title list={["Mousetrap Car"]}/>
 
 
         <main>

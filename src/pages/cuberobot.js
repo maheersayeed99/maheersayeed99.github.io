@@ -1,19 +1,14 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
 import { Sliding_Image } from '../components/sliding_image';
+import { Title } from '../components/title';
 
 function Cube_Robot_Page() {
 
   return (
     <body class = "wholeBody">
         
-        <header>
-
-            <div class="title">
-                <h2>Rubik's<span>Cube</span>Robot<span class="shadow">rubik'scuberobot</span></h2>
-            </div>
-
-        </header>
+        <Title list={["Rubik's Cube","Robot"]}/>
 
 
         <main>

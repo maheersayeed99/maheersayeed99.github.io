@@ -1,19 +1,15 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
 import { Sliding_Image } from '../components/sliding_image';
+import { Title } from '../components/title';
+
 
 function Rviz_Page() {
 
   return (
     <body class = "wholeBody">
 
-        <header>
-
-            <div class="title">
-                <h2>Workspace<span>Viewer</span><span class="shadow">workspaceviewer</span></h2>
-            </div>
-
-        </header>
+        <Title list={["Workspace","Visualizer"]}/>
 
 
         <main>

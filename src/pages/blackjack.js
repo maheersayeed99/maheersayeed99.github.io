@@ -1,19 +1,13 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Title } from '../components/title';
 
 function Blackjack_Page() {
 
   return (
     <body class = "wholeBody">
         
-        <header>
-
-            <div class="title">
-                <h2>Blackjack<span>Trainer</span><span class="shadow">blackjacktrainer</span></h2>
-            </div>
-
-        </header>
+        <Title list={["Blackjack","Trainer"]}/>
 
 
         <main>

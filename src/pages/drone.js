@@ -1,19 +1,13 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Title } from '../components/title';
 
 function Drone_Page() {
 
   return (
     <body class = "wholeBody">
         
-    <header>
-
-        <div class="title">
-            <h2>LQR<span>Drone</span>Controller<span class="shadow">LQRDRONEcontroller</span></h2>
-        </div>
-
-    </header>
+        <Title list={["LQR","Drone Controller"]}/>
 
 
     <main>

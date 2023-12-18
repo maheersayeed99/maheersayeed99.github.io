@@ -1,6 +1,6 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Title } from '../components/title';
 
 function Linkage_Page() {
 
@@ -8,13 +8,7 @@ function Linkage_Page() {
 
     <body class = "wholeBody">
         
-        <header>
-
-            <div class="title">
-                <h2>4Bar<span>Linkage</span><span class="shadow">4barLinkage</span></h2>
-            </div>
-
-        </header>
+        <Title list={["4-bar","Linkage"]}/>
 
 
         <main>

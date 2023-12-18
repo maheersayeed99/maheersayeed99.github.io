@@ -1,19 +1,13 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Title } from '../components/title';
 
 function Gym_Page() {
 
   return (
     <body class = "wholeBody">
         
-        <header>
-
-            <div class="title">
-                <h2>Haptic<span>Gym</span><span class="shadow">hapticgym</span></h2>
-            </div>
-
-        </header>
+        <Title list={["Haptic","Gym"]}/>
 
 
 

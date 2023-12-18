@@ -1,6 +1,8 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
 import { Sliding_Image } from '../components/sliding_image';
+import { Title } from '../components/title';
+
 
 function Shoerack_Page() {
 
@@ -8,13 +10,7 @@ function Shoerack_Page() {
     <body class = "wholeBody">
         
         
-        <header>
-
-            <div class="title">
-                <h2>Collapsible<span>Rack</span><span class="shadow">CollapsibleRack</span></h2>
-            </div>
-
-        </header>
+        <Title list={["Collapsible","Shoerack"]}/>
 
         <main>
             

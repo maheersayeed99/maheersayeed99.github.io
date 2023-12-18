@@ -1,20 +1,16 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Title } from '../components/title';
 
 function Cube_Page() {
 
   return (
         <html>
+        
+
         <body class = "wholeBody">
 
-            <header>
-
-                <div class="title">
-                    <h2>Rubik's<span>Cube</span>Solver<span class="shadow">rubik'scubesolver</span></h2>
-                </div>
-
-            </header>
+            <Title list={["Rubik's Cube","Solver"]}/>
             
             <main>
                 <div class="preview">

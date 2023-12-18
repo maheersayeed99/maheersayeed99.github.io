@@ -9,18 +9,10 @@ function Home_Page() {
   return (
         <body class = "wholeBody">
             
-            <div class="back"></div>
             
-            <header class="section sec1 header" id="home">
-                <i class="fa-solid fa-house-chimney"></i>
-            </header>
-
-
+            <Title list={["Engineering","Projects"]}/>
 
             <main>
-                <section class="section sec2 projects active-sec" id="projects">
-                    
-                    <Title/>
 
                     <div class="posts">
                         
@@ -160,20 +152,8 @@ function Home_Page() {
 
                     </div>
 
-
-                </section>
-
-
-                <section class="section sec3 about" id="about">
-                    <div class="title">
-                        <h2>Maheer<span>Sayeed</span><span class="shadow">MaheerSayeed</span></h2>
-                    </div>
-                </section>
-
             </main>
             
-
-            <script src="project.js"></script>
             
         </body>
   );

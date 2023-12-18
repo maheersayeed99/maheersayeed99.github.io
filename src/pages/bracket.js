@@ -1,6 +1,6 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Title } from '../components/title';
 
 function Bracket_Page() {
 
@@ -8,14 +8,7 @@ function Bracket_Page() {
     
     <body class = "wholeBody">
         
-        <header>
-
-            <div class="title">
-                <h2>Acrylic<span>Bracket</span><span class="shadow">AcrylicBracket</span></h2>
-            </div>
-
-        </header>
-
+        <Title list={["Acrylic","Bracket"]}/>
 
 
 

@@ -1,19 +1,13 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Title } from '../components/title';
 
 function Productlogic_Page() {
 
   return (
     <body class = "wholeBody">
         
-        <header>
-
-            <div class="title">
-                <h2>Product<span>Logic</span>Projects<span class="shadow">ProductLogicProjects</span></h2>
-            </div>
-
-        </header>
+        <Title list={["ProductLogic","Projects"]}/>
 
         <main>
             <div class="preview">

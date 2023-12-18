@@ -1,19 +1,13 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Title } from '../components/title';
 
 function Crane_Page() {
 
   return (
     <body class = "wholeBody">
         
-        <header>
-
-            <div class="title">
-                <h2>Aluminum<span>Crane</span><span class="shadow">AluminumCrane</span></h2>
-            </div>
-
-        </header>
+        <Title list={["Aluminum","Crane"]}/>
 
 
         <main>

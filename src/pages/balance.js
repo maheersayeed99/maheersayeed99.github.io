@@ -1,19 +1,13 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Title } from '../components/title';
 
 function Balance_Page() {
 
   return (
     <body class = "wholeBody">
         
-        <header>
-
-            <div class="title">
-                <h2>Ball<span>Balancing</span>Robot<span class="shadow">BallBalancingRobot</span></h2>
-            </div>
-
-        </header>
+        <Title list={["Ball-Balancing","Robot"]}/>
 
 
 

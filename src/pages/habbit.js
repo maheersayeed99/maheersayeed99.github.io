@@ -1,19 +1,13 @@
 import '../stylesheets/project.css';
 import { Horizontal_Image_Array } from '../components/horizontal_image_array';
-
+import { Title } from '../components/title';
 
 function Habbit_Page() {
 
   return (
     <body class = "wholeBody">
         
-    <header>
-
-        <div class="title">
-            <h2>Habbit<span>Tracker</span><span class="shadow">habbittracker</span></h2>
-        </div>
-
-    </header>
+    <Title list={["Habit","Tracker"]}/>
 
 
     <main>

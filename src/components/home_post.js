@@ -8,6 +8,7 @@ const Home_Post = (props) => {
 
     const navigateToPage = (route) => {
         navigate(route);
+        window.scrollTo(0, 0);
     };
     
     return(

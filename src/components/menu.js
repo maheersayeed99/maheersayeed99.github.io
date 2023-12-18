@@ -18,6 +18,7 @@ const Menu = () => {
         // const current_button = document.querySelector(`[data-id="${id}"]`);
         // current_button.classList.add('active-btn');
         navigate(route);
+        window.scrollTo(0, 0)
     };
 
     const refresh = useEffect(()=>{
