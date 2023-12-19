@@ -387,11 +387,12 @@ main .img-comp-slider {
   height: 200px;
   background-color: var(--color-watermelon);
   transform: translateX(-50%);
+  transform: translateY(+50%);
   
   opacity: 0.5;
   border-radius: 10px;
   margin-left: 70%;
-  margin-top: 25%;
+  /* margin-top: 25%; */
   
 }
 main .img-comp-slider:hover {
@@ -559,8 +560,8 @@ main .img-comp-slider:hover {
     margin-left: 5%;
   }
   main .img-comp-container {
-    margin-left: 5%;
-    width: 90%;
+    margin-left: 10%;
+    width: 80%;
   }
   main .img-comp-slider {
     width: 40px;
