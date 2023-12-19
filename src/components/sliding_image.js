@@ -71,9 +71,9 @@ const Sliding_Image = (props) => {
     return(
 
         <div class="img-comp-container" >
-            
-            <div class="img-comp-slider" style={{marginLeft:`${sliderShow}%`}} onTouch onTouchStart={(event)=>{handleTouchDown(event)}} onMouseDown={(event)=>{handleMouseDown(event)}}></div>
-
+            <div class="slider-container">
+                <div class="img-comp-slider" style={{marginLeft:`${sliderShow}%`}} onTouch onTouchStart={(event)=>{handleTouchDown(event)}} onMouseDown={(event)=>{handleMouseDown(event)}}></div>
+            </div>
             <div class="img-comp-img" id={props.image_element_id}>
                 <img src={props.image_left}/>
                 
