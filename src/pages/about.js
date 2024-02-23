@@ -17,7 +17,7 @@ function About_Page() {
             <main>
 
                 <div class="pdf-img" >
-                    <img src="/resume/maheer_resume.jpg"></img>
+                    <img src="/resume/maheer-resume.jpg"></img>
                 </div>
 
 
