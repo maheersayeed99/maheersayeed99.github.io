@@ -10,20 +10,19 @@ function About_Page() {
 
 
   return (
-        <body class = "wholeBody">
+        <body class="wholeBody">
             
-            <Title list={["Resume"]}/>
+    <Title list={["Resume"]}/>
 
-            <main>
+    <main>
 
-                <div class="pdf-img" >
-                    <img src="/resume/maheer-resume.jpg"></img>
-                </div>
+        <div class="pdf-test">
+            <embed src="/resume/maheer-resume.pdf" type="application/pdf" width="100%" height="1000px" />
+        </div>
 
-
-            </main>
+    </main>
             
-        </body>
+</body>
   );
 }
 

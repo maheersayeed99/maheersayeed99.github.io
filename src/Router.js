@@ -18,6 +18,7 @@ import Linkage_Page from './pages/linkage';
 import Crane_Page from './pages/crane';
 import Gripper_Page from './pages/gripper';
 import Chassis_Page from './pages/chassis';
+import Interstellar_Page from './pages/interstellar';
 
 
 
@@ -47,6 +48,7 @@ function Page_Router() {
         <Route path="/linkage" element={<Linkage_Page/>} />
         <Route path="/gripper" element={<Gripper_Page/>} />
         <Route path="/chassis" element={<Chassis_Page/>} />
+        <Route path="/interstellar" element={<Interstellar_Page/>} />
     </Routes>
 
     

@@ -16,7 +16,14 @@ function Home_Page() {
 
                     <div class="posts">
                         
-                        
+                        <Home_Post
+                        data_id = "interstellar" 
+                        image_src = "img/interstellar/1.png"
+                        title = "Interstellar Jobs"
+                        text = "This is an AI powered job board that I made with three other students for the March Microsoft Innovation Challenge"
+                        link = "https://github.com/zachpatrignani/microsoft-hackathon"
+                        />
+                    
                         <Home_Post
                         data_id = "habbit" 
                         image_src = "img/habbit/5.jpeg"
