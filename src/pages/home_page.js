@@ -20,7 +20,7 @@ function Home_Page() {
                         data_id = "interstellar" 
                         image_src = "img/interstellar/1.png"
                         title = "Interstellar Jobs"
-                        text = "This is an AI powered job board that I made with three other students for the March Microsoft Innovation Challenge"
+                        text = "This is an AI powered job board that I made with three other students for the March Microsoft Innovation Challenge. We finished first place out of 60+ teams."
                         link = "https://github.com/zachpatrignani/microsoft-hackathon"
                         />
                     

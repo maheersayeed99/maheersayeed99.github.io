@@ -17,7 +17,8 @@ function Interstellar_Page() {
         
         <h4>Overview:</h4>
 
-        <p>This is an AI powered job board that I made with three other students for the March Microsoft Innovation Challenge. The job board app intended to help job seekers who may have impairments that make it difficult for them to find suitable jobs.</p>
+        <p>This is an AI powered job board that I made with three other students for the March Microsoft Innovation Challenge. Our team ended up finishing first place out of 60+ teams world-wide, winning the grand prize of $10,000. </p>
+        <p>The job board app intended to help job seekers who may have impairments that make it difficult for them to find suitable jobs.</p>
         
         <h4>Demo:</h4>
         {/* <iframe width="362" height="644" src="https://www.youtube.com/watch?v=szrq1NR8Ii0" title="Interstellar Jobs Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
