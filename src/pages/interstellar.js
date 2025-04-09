@@ -18,6 +18,7 @@ function Interstellar_Page() {
         <h4>Overview:</h4>
 
         <p>This is an AI powered job board that I made with three other students for the March Microsoft Innovation Challenge. Our team ended up finishing first place out of 60+ teams world-wide, winning the grand prize of $10,000. </p>
+        <p>More information about the competition can be found in this post <a href="https://techcommunity.microsoft.com/discussions/azure/announcing-the-winners-of-the-march-innovation-challenge-hackathon/4398522">March 2025 Innovation Challenge Winners Announcement</a></p>
         <p>The job board app intended to help job seekers who may have impairments that make it difficult for them to find suitable jobs.</p>
         
         <h4>Demo:</h4>
